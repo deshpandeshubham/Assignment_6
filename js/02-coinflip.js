@@ -2,9 +2,11 @@ var coinFlip = Math.floor(Math.random() * 10);
 var choice = window.prompt("Heads or Tails");
 var result;
 
-(coinFlip < 5) ? result = true : result = false;
+//  Points 1-7 : 
 
-/*if(result == "Heads" && choice == "Heads") {
+/* (coinFlip < 5) ? result = "Heads" : result = "Tails"; 
+
+if(result == "Heads" && choice == "Heads") {
     window.document.write("The flip was heads and you chose heads...you win!");
 }
 
@@ -21,6 +23,9 @@ else if(result == "Tails" && choice == "Tails") {
 }*/
 
 
+// Point 8 : Boolean coinFlip Result
+
+(coinFlip < 5) ? result = true : result = false;
 
 if(result && choice == "Heads") {
     window.document.write("The flip was heads and you chose heads...you win!");
